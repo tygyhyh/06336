@@ -1,7 +1,5 @@
 name: 0127sch
-on:
-  schedule:
-    - cron: '*/58 * * * *' # Run every day at midnight
+on: [push, workflow_dispatch]
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
