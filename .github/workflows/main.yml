@@ -1,5 +1,7 @@
 name: nine
-on: [push, workflow_dispatch]
+on:
+  schedule:
+    - cron: '27 */2 * * *' # 
 jobs:
   download-and-run:
     runs-on: ubuntu-latest
